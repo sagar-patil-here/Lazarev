@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin: 2.8vh 0vh; */
+    font-size: 1vw;
+    text-transform: uppercase;
+    gap: 2vw;
+    margin-bottom: 0;
+    z-index: 10;
+}
+nav h1{
+    font-size: 1.8vw ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 650;
+}
+nav .nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .nav-part2 h2{
+    font-weight: 500;
+    margin: 13px;
+    font-size: .8vw;
+   transition: all ease 0.2s;
+    
+}
+nav .nav-part2 h2:hover{
+    cursor: pointer;
+    color: #4A4A4A;
+    
+}
+/* nav .nav-part2 h2:hover .nav-bottom{
+    height: 100%;
+    bottom:-230%;
+} */
+nav button{
+    background-color: #0BA34D;
+    /* background-color: white; */
+    padding:1vw;
+    padding-right: 0;
+    border: 1px solid #060606 ;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 550;
+    /* margin: 2vw 1vw; */
+
+}
+nav button:hover {
+    /* background-color: #060606; */
+    /* transition: all ease 1s; */
+}
+nav button i{
+    font-size: 1vw;
+    margin-left: .05vw;
+    margin-right: 0;
+    padding: 1vw;
+    background-color: #0BA34D;
+    border-radius: 50%;
+    /* transition: all ease 1s; */
+    
+
+}
+/* nav button:hover i{
+   
+
+} */
+
+.nav-bottom{
+    background-color: #111111;
+    /* background-color: #0BA34D; */
+    width: 87%;
+    height: 0vh;
+    position: absolute;
+    bottom: 0vh;
+    border-bottom: 1px solid #dadada;
+    /* margin-top: 5vh; */
+    transition: all ease 0.3s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vw;
+    /* padding: 15vw 15vw; */
+    padding-left: 13vw;
+    /* padding-right: 11vw; */
+}
+nav:hover .nav-bottom{
+    height: 23vh;
+    bottom: -22vh;
+}
+nav:hover .nav-options span{
+    opacity: 1;
+    transition: all ease-in 0.4s;
+
+    /* visibility: visible; */
+}
+/* .nav-bottom :nth-child(3){
+    margin-left: -10;
+} */
+.nav-options{
+    /* background-color: red; */
+    /* margin-left: -2vw; */
+    line-height: 3vh;
+
+}
+.nav-options span{
+    font-size: 0.8vw;
+    font-weight: 200;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: all ease-out 0.01ms;
+    display: inline-block;
+}
+.nav-options span:hover{
+    cursor: pointer;
+    color: #4A4A4A;
+
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   
+}
+.page1 h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 9vw;
+    font-weight: 1500;
+    line-height: 9vw;
+    letter-spacing: -2.5px;
+    word-spacing: -12px;
+    /* transition: transform 3s ease; */
+}
+/* .page1 h1:hover{
+    transform: scale(0.5) rotate(360deg);
+} */
+.page1 h1 span svg{
+    height: 7vw;
+    background-color: #0BA34D;
+    border-radius: 50%;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+
+}
+.page1 h1 span svg:hover{
+    transform:scale(0.8) rotate(-20deg);
+    cursor: pointer;
+    
+}
+.page1 p{
+    text-align: center;
+    font-weight: 300;
+    margin-top: 6vh;
+}
+.page1 .something{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.page1 .something h4{
+    text-transform: lowercase;
+    font-size: 1vw;
+    font-weight: 300;
+    margin: 10px 3px;
+    padding:8px 6px;
+    border: .5px solid #CFC4C5;
+    border-radius: 50px;
+}
+.page1 .something h4:nth-last-child(2){
+    border: none;
+    padding: 0;
+}
+.moving-div{
+    /* background-color: red; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    width: 50%;
+    white-space: nowrap;
+    padding: 2vw;
+    overflow: hidden;
+}
+.moving-div .blur-left{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right,#111,transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+.moving-div .blur-right{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right,transparent,#111);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+}
+.moving-div .move {
+    /* display: flex;
+    align-items: center; */
+    display: inline-block;
+   
+    gap: 2vw  ;
+    animation-name: mobe;
+    animation-duration: 13 s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.moving-div .move img{
+    margin: 0 1.2vw;
+    height: 1.2vw;
+}
+@keyframes mobe {
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(-100%)
+
+    }
+    
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+}
