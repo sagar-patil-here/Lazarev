@@ -64,10 +64,7 @@ nav button{
     /* margin: 2vw 1vw; */
 
 }
-nav button:hover {
-    /* background-color: #060606; */
-    /* transition: all ease 1s; */
-}
+
 nav button i{
     font-size: 1vw;
     margin-left: .05vw;
