@@ -308,3 +308,96 @@ object-fit: cover;
  scale: 0;
  opacity: 0;
 }
+
+.page3{
+    height: 80vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 10vh; */
+
+}
+.page3 video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 99999;
+    transform: scaleX(0.5) scaleY(0);
+    opacity: 0;
+    border-radius: 40px;
+}
+.page3 .video-container{
+    height: 28vh;
+    width: 10vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 50%;
+}
+.page3 .video-container .play-button i{
+color: #111;
+background-color: #fff;
+font-size: 4vw;
+font-weight: 300;
+padding : 3vw;
+border-radius: 50%;
+cursor: pointer;
+}
+.play-text{
+    height: 1vw;
+    background-color: #fff;
+    padding: 1vw .7vw;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    transform: translateY(50%);
+    opacity:0;
+}
+
+.play-text h5{
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8vw;
+    text-transform: uppercase;
+}
+.video-container:hover .play-text {
+    opacity: 1;
+    transform: translateY(5%);
+
+}
+
+
+
+/* .play-text h5 {
+    font-size: 0.8vw;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 12px 26px 10px 26px;
+    margin-top: 0.5vw;
+    font-weight: 700;
+    opacity: 1;
+    transition: all ease 0.5s;
+    transform: translateY(16%);
+    text-transform: uppercase;
+}
+
+.video-container:hover .play-text h5 {
+    opacity: 1;
+    transform: translateY(0%);
+} */
+
+.page4{
+    height: 100vh;
+    width: 100%;
+
+}

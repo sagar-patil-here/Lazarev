@@ -32,4 +32,30 @@ function page2animation(){
     })
     
 }
+function page3videoanimation(){
+    var playbutton=document.querySelector(".video-container")
+    var video=document.querySelector("video")
+    playbutton.addEventListener("click",function(){
+        video.play()
+        gsap.to(video,{
+            transform:"scaleX(1) scaleY(1)",
+            opacity:2,
+            borderRadius:0,
+            duration: 1
+        
+
+        })
+    })
+    video.addEventListener("click",function(){
+        video.pause()
+        gsap.to(video,{
+            opacity:0,
+            transform:"scaleX(0.5) scaleY(0)",
+            borderRadius:"30px"
+           
+        
+        })
+    })
+}
+page3videoanimation()
 page2animation()
