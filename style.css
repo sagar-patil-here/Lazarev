@@ -464,19 +464,49 @@ cursor: pointer;
     font-size: 1vw;
     font-weight: 200;
 }
-
-
-
-
-
-
-
-
-
-
 .page6{
+    height: 50vh;
+    width: 100%;
+    padding: 5% 3%;
+    padding-top: 1%;
+    background-color: #111111;
+    border-top: 2px solid #95ff0030;
+    border-bottom: 1px solid #333;
+
+}
+.text-contain{
+    /* background-color: #A3A3A3; */
+    height: 100%;
+    width: 70%;
+    margin-left: 30%;
+    margin-top: 10vh;
+    /* display: flex; */
+}
+.first-text{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-text p{
+    font-size: 1vw;
+    color: #fff;
+
+}
+.first-text h1{
+    color: #fff;
+
+    width: 70%;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+.second-text h1{
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+.page7{
+    background-color: #111111;
     height: 100vh;
     width: 100%;
 }
-
-
