@@ -4,7 +4,7 @@ function page2animation(){
        
         elem.addEventListener("mouseenter",function(){
             gsap.to(elem.childNodes[3],{
-                opacity:1,
+                opacity:.5,
                 scale:1,
                 
                 
@@ -57,5 +57,5 @@ function page3videoanimation(){
         })
     })
 }
-page3videoanimation()
+// page3videoanimation()
 page2animation()

@@ -317,7 +317,7 @@ object-fit: cover;
     height: 80vh;
     width: 100vw;
     background-color: #ffffff;
-    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    /* background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp); */
     background-size: cover;
     position: relative;
     display: flex;
@@ -331,9 +331,9 @@ object-fit: cover;
     width: 100%;
     position: absolute;
     z-index: 99999;
-    transform: scaleX(0.5) scaleY(0);
-    opacity: 0;
-    border-radius: 40px;
+    /* transform: scaleX(0.5) scaleY(0);
+    opacity: 0; 
+    border-radius: 40px; */
 }
 
 .page3 .video-container{
